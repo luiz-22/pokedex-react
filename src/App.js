@@ -1,24 +1,31 @@
-import logo from './logo.svg';
+import React, { useState, useEffect } from "react";
+import Header from "./components/Header";
+import Main from "./components/Main"
+import CardModal from "./components/CardModal"
 import './App.css';
 
 function App() {
+  const [pokemons, setPokemons] = useState([]);
+  const [search, setSearch] = useState([]);
+
+  useEffect(() => {
+    fetch('https://pokeapi.co/api/v2/pokemon?limit=898')
+      .then(res => res.json())
+      .then(json => {
+        /* console.log(json) */
+        setPokemons(json.results)
+        setSearch(json.results)
+      });
+  }, []);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <div className="container">
+        <Header pokemons={pokemons} setSearch={setSearch}></Header>
+        <Main search={search} />
+      </div>
+      <CardModal/>
+    </>
   );
 }
 

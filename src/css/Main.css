@@ -1,0 +1,7 @@
+.grid-fluid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    column-gap: 1rem;
+    row-gap: 1rem;
+    text-align: center;
+}
