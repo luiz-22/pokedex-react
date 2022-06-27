@@ -5,8 +5,7 @@ const Main = (props) => {
 
     return (
         <section className='grid-fluid' >
-            {/* {props.search.map(el => <p key={el.name}>{el.name}</p>)} */}
-            {props.search.map(el => <Card el={el}/>)}
+            {props.search.map(el => <Card key={el.name} el={el}/>)}
         </section>
     )
 }

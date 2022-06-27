@@ -28,7 +28,7 @@ input::-webkit-search-cancel-button {
         flex-direction: column-reverse;
     }
 
-    h1{
+    h1 {
         margin-bottom: 1rem;
     }
-  }
+}
