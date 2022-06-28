@@ -1,6 +1,9 @@
 import '../css/CardModal.css'
 
 const CardModal = ({setModal, description}) => {
+
+    let height = description.height
+    let weight = description.weight
     
     return (
         <article onClick={() => setModal(false)}>
@@ -10,17 +13,17 @@ const CardModal = ({setModal, description}) => {
                         <div className="card__body">
                             <div className="card__head">
                                 <div className="main-info">
-                                    <h1 className="name">{description.name}</h1>
-                                    <span className="hp">120 HP</span>
+                                    <h1 className="name">{description.name ?? "-"}</h1>
+                                    <span className="hp">{description.stats[0].base_stat ?? "-"} HP</span>
                                 </div>
 
                                 <div className="frame">
-                                    <div className="frame__img">
+                                    <div className="frame__img" style={{  backgroundImage: "url(" + `https://img.pokemondb.net/artwork/large/${description.name}.jpg` + ")"  ?? ""}}>
                                     </div>
                                 </div>
 
                                 <div className="stats">
-                                    <span>Length: 5' 7", Weight: 200 lbs.</span>
+                                    <span>Length: {height / 10 ?? "-"} m., Weight: {weight / 10 ?? "-"} kg.</span>
                                 </div>
 
                             </div>

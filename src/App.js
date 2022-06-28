@@ -30,7 +30,7 @@ function App() {
       {loader && <Loader/>}
       <div className="container">
         <Header pokemons={pokemons} setSearch={setSearch}></Header>
-        <Main search={search} setModal={setModal} setDescription={setDescription}/>
+        <Main search={search} setModal={setModal} setDescription={setDescription} setLoader={setLoader}/>
       </div>
       {modal && <CardModal setModal={setModal} description={description}/>}
     </>

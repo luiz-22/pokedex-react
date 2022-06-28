@@ -1,6 +1,6 @@
 import '../css/Card.css'
 
-const Card = ({ el, setModal, setDescription }) => {
+const Card = ({ el, setModal, setDescription, setLoader }) => {
 
     let namePokemon = el.name
 
@@ -12,15 +12,16 @@ const Card = ({ el, setModal, setDescription }) => {
         namePokemon = "mimikyu"
     }
 
-    const handleClick = async () => {
+    const handleClick = () => {
+        setLoader(true)
         fetch(el.url)
             .then(res => res.json())
             .then(json => {
+                setLoader(false)
                 console.log(json)
                 setDescription(json)
                 setModal(true)
             });
-
     }
 
     return (

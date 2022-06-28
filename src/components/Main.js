@@ -10,6 +10,7 @@ const Main = (props) => {
           el={el}
           setModal={props.setModal}
           setDescription={props.setDescription}
+          setLoader={props.setLoader}
         />
       ))}
     </section>
