@@ -2,12 +2,12 @@ article {
     height: 100%;
     width: 100%;
     position: fixed;
-    z-index: 97;
+    z-index: 95;
     top: 0;
     left: 0;
     overflow: hidden;
     background-color: #00000090;
-    display: none;
+    display: block;
 }
 
 .modal {

@@ -1,16 +1,16 @@
 import '../css/CardModal.css'
 
-const CardModal = () => {
-
+const CardModal = ({setModal, description}) => {
+    
     return (
-        <article>
+        <article onClick={() => setModal(false)}>
             <div className='modal'>
                 <div className="wrapper2">
                     <div className="card">
                         <div className="card__body">
                             <div className="card__head">
                                 <div className="main-info">
-                                    <h1 className="name">Charizard</h1>
+                                    <h1 className="name">{description.name}</h1>
                                     <span className="hp">120 HP</span>
                                 </div>
 

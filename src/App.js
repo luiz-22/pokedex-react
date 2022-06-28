@@ -9,6 +9,8 @@ function App() {
   const [pokemons, setPokemons] = useState([]);
   const [search, setSearch] = useState([]);
   const [loader, setLoader] = useState(true);
+  const [modal, setModal] = useState(false);
+  const [description, setDescription] = useState({});
 
   useEffect(() => {
     /* setLoader(true) */
@@ -28,9 +30,9 @@ function App() {
       {loader && <Loader/>}
       <div className="container">
         <Header pokemons={pokemons} setSearch={setSearch}></Header>
-        <Main search={search} />
+        <Main search={search} setModal={setModal} setDescription={setDescription}/>
       </div>
-      <CardModal />
+      {modal && <CardModal setModal={setModal} description={description}/>}
     </>
   );
 }
