@@ -18,6 +18,7 @@ import rock from '../assets/background/rock.png'
 import steel from '../assets/background/steel.png'
 import water from '../assets/background/water.png'
 
+
 const CardModal = ({ setModal, description }) => {
 
     let name = description.name.charAt(0).toUpperCase() + description.name.slice(1)
