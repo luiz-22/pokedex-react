@@ -2,6 +2,7 @@ import '../css/CardModal.css'
 
 const CardModal = ({setModal, description}) => {
 
+    let name = description.name.charAt(0).toUpperCase() + description.name.slice(1)
     let height = description.height
     let weight = description.weight
     
@@ -13,7 +14,7 @@ const CardModal = ({setModal, description}) => {
                         <div className="card__body">
                             <div className="card__head">
                                 <div className="main-info">
-                                    <h1 className="name">{description.name ?? "-"}</h1>
+                                    <h1 className="name">{name ?? "-"}</h1>
                                     <span className="hp">{description.stats[0].base_stat ?? "-"} HP</span>
                                 </div>
 
