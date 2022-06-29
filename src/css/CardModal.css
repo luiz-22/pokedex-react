@@ -50,7 +50,7 @@ article {
     bottom: 0;
     left: 0;
     margin: 3.168vh;
-    background-image: url(https://i.imgur.com/x7L9qpC.png);
+    /* background-image: url(https://i.imgur.com/x7L9qpC.png); */
     background-size: cover;
     z-index: 1;
 }
