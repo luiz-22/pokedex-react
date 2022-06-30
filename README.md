@@ -15,7 +15,7 @@ Do a search for a pokemon by name. If you click you can see a simple card.
 
 ## Copied codes
 
-https://codepen.io/keithpickering/pen/LEWwed
+https://codepen.io/keithpickering/pen/LEWwed  
 https://codepen.io/raubaca/pen/obaZmG
 
 ## Learning
