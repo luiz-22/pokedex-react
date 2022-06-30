@@ -6,7 +6,7 @@
 
 ![screenshot1](https://github.com/luiz-22/pokedex-react/blob/master/src/assets/screenshots/pokedex2.png)
 
-## 📃About
+# 📃 About
 
 
 
