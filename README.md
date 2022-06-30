@@ -1,21 +1,30 @@
 # Pokédex with React
 
-[About](#page_with_curl-about) |
+## Screenshots
 
 ![screenshot1](https://github.com/luiz-22/pokedex-react/blob/master/src/assets/screenshots/pokedex1.png)
 
 ![screenshot1](https://github.com/luiz-22/pokedex-react/blob/master/src/assets/screenshots/pokedex2.png)
 
-## 📃 About
+
+## About
+
+Learning some React and doing copy and paste.
+Do a search for a pokemon by name. If you click you can see a simple card.
 
 
-fadsfaf
-f
-adsf
-ds
-fdas
-fdas
-f
+## Copied codes
+
+https://codepen.io/keithpickering/pen/LEWwed
+https://codepen.io/raubaca/pen/obaZmG
+
+## Learning
+
+https://jonmircha.com/
+...
+
+
+
 
 
 
