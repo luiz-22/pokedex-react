@@ -9,7 +9,7 @@
 
 ## About
 
-Learning some React and doing copy and paste.
+Learning some React and doing copy and paste.  
 Do a search for a pokemon by name. If you click you can see a simple card.
 
 
@@ -20,7 +20,7 @@ https://codepen.io/raubaca/pen/obaZmG
 
 ## Learning
 
-https://jonmircha.com/
+https://jonmircha.com/  
 ...
 
 
